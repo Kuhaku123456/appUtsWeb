@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("wp6524586-japan-neon-wallpapers.jpg");
+    background-size: cover;
+}
+
+.container {
+    
+    padding: 30px;
+    border-radius: 5px;
+    background-image: url("");
+    position: relative;
+    box-shadow: 0px 2px 5px #26becf1a;
+    text-align: center;
+    background-size: 150%;
+    width: 400px; 
+    color: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color:#ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #e81616;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ff9999;
+    display: none;
+}
+
+.error-message.active {
+    display: block;
+}

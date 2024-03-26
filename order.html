@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Manisan</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Manisan</h1>
+    <p>Pilih manisan favorit Anda dan nikmati kesegarannya!</p>
+    <div class="manisan-list">
+      <!-- Manisan items -->
+      <div class="manisan-item" onclick="addToCart('mangga')">
+        <img src="th.jpeg" alt="Manisan Mangga">
+        <h3>Manisan Mangga</h3>
+        <p>Rp 5.000/buah</p>
+        <input type="number" name="jumlah-manisan-mangga" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('salak')">
+        <img src="th (1).jpeg" alt="Manisan Salak">
+        <h3>Manisan Salak</h3>
+        <p>Rp 7.000/buah</p>
+        <input type="number" name="jumlah-manisan-salak" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('nanas')">
+        <img src="download.jpeg" alt="Manisan Nanas">
+        <h3>Manisan Nanas</h3>
+        <p>Rp 8.000/buah</p>
+        <input type="number" name="jumlah-manisan-nanas" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('anggur')">
+        <img src="OIP.jpeg" alt="Manisan Anggur">
+        <h3>Manisan Anggur</h3>
+        <p>Rp 10.000/buah</p>
+        <input type="number" name="jumlah-manisan-anggur" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('pepaya')">
+        <img src="OIP (1).jpeg" alt="Manisan Pepaya">
+        <h3>Manisan Pepaya</h3>
+        <p>Rp 6.000/buah</p>
+        <input type="number" name="jumlah-manisan-pepaya" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('pisang')">
+        <img src="OIP (2).jpeg" alt="Manisan Pisang">
+        <h3>Manisan Pisang</h3>
+        <p>Rp 4.000/buah</p>
+        <input type="number" name="jumlah-manisan-pisang" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('jeruk')">
+        <img src="OIP (3).jpeg" alt="Manisan Jeruk">
+        <h3>Manisan Jeruk</h3>
+        <p>Rp 9.000/buah</p>
+        <input type="number" name="jumlah-manisan-jeruk" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <div class="manisan-item" onclick="addToCart('apel')">
+        <img src="OIP (4).jpeg" alt="Manisan Apel">
+        <h3>Manisan Apel</h3>
+        <p>Rp 7.500/buah</p>
+        <input type="number" name="jumlah-manisan-apel" placeholder="Jumlah (buah)" value="1">
+      </div>
+      <!-- End of Manisan items -->
+    </div>
+    <div class="total-harga">
+      <label for="total-harga">Total Harga:</label>
+      <span id="total-harga-span">Rp 0</span>
+    </div>
+    <button id="hitung-total" type="button">Hitung Total</button>
+  </div>
+  <script src="order.js"></script>
+</body>
+</html>
